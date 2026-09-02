@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Orbit 面经采集",
+  "version": "1.0.0",
+  "description": "从支持的面经页面采集内容到 Orbit。",
+  "minimum_chrome_version": "116",
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*",
+    "https://www.nowcoder.com/*",
+    "https://www.xiaohongshu.com/*",
+    "https://*.xhscdn.com/*"
+  ],
+  "action": {
+    "default_title": "打开 Orbit 面经采集",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "scripts/service-worker.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

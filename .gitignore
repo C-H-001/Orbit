@@ -1,0 +1,19 @@
+node_modules/
+.pnpm-store/
+dist/
+dist-extension/
+build/
+.cache/
+.env*
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.tmp-*
+data/config.json
+data/*.sqlite*
+
+# Local runtime data (sqlite, backups, recovery) — never commit
+/data/
